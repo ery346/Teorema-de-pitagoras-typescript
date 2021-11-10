@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+body, html{
+    color: rgb(97, 114, 114);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h5{
+    color: darkblue;
+}

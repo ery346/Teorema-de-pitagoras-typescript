@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center" style="background-image:linear-gradient(rgba(8, 47, 223, 0.637),rgba(9, 9, 63, 0.295))">
+
+    <div class="text-center" style="padding-top: 4rem;">
+     <h1 style="padding-bottom: 4rem;">TEOREMA DE PITAGORAS</h1>
+    </div>
+  
+  </div>
+  
+    <form (ngSubmit)="recolectarResultados()">
+      <!-- Inputs -->
+        <hr>
+      <div style="text-align: center;">
+        Ingresa los valores
+           <hr>
+           <div class="{{class}}">
+            {{ error }}
+          </div>
+        <div class="container overflow-hidden" >
+
+            <!-- Inputs -->
+            <app-inputs [objeto]="objeto1"></app-inputs>
+            <!-- Inputs -->
+  
+            <app-resultado [MostrarResultado]="MostrarResultado1" ></app-resultado>
+          
+        </div>
+       
+        <!-- Resultados de area y perimetro -->
+        <app-area-perimetro [area]="Area" [perimetro]="Perimetro"></app-area-perimetro>
+      
+
+        <hr>
+        <button type="submit" class="btn btn-primary btn-lg active">Calcular</button>
+  
+      </div>
+  
+    </form>

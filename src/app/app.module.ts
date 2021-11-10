@@ -1,14 +1,21 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+
 
 import { AppComponent } from './app.component';
 
+import { MainPageModule } from './main-page/main-page.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,////// es para formularios 
+    MainPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
